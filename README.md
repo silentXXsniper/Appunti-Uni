@@ -23,3 +23,4 @@ I corsi seguono un color coding specifico:
 
 - Fornisco solo i PDF finali, non i markdown originali
 - chi vuole fare notare errori o suggerire miglioramenti può aprire una issue o contattarmi direttamente.
+- questa repository è ancora in fase di sviluppo, quindi aspettatevi cambiamenti nella struttura e nei contenuti.
