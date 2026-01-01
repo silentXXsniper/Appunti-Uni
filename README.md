@@ -12,12 +12,13 @@ I corsi seguono un color coding specifico:
 
 - **algoritmi e strutture dati** - Blu
 - **sistemi operativi** - Verde
+- **statistica** - Arancione (work in progress per la formattazione)
   
 (a seguire verranno aggiunti altri corsi e colori)
 
 ## Note:
 
-- Aggiorno gli appunti su Ghitub sporiadicamente, principalmente quando finisco un capitolo e ho avuto tempo di rivederli (l'ultimo aggiornamente è visibile in alto a sinistra nei files). 
+- Aggiorno gli appunti su Ghitub sporiadicamente, principalmente quando finisco un capitolo e ho avuto tempo di rivederli (l'ultimo aggiornamente è comunque visibile in alto a sinistra nei files PDF). 
 
 - Possono contenere errori/imprecisioni.
 
