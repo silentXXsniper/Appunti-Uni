@@ -7443,29 +7443,29 @@ main {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-r"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">IRdisplay</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">IRdisplay</span><span class="p">)</span>
 
-<span class="n">custom_css</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">"</span>
-<span class="s">&lt;style&gt;</span>
-<span class="s">  h1{ font-family: 'Georgia'!important; color: #d35400; border-bottom: 5px solid #e67e22; padding-bottom: 10px; !important }</span>
-<span class="s">  h2{ font-family: 'Georgia'!important; color: #d35400; border-bottom: 3px solid #e67e22; padding-bottom: 10px; !important}</span>
-<span class="s">  h3{ font-family: 'Georgia'!important; color: #d35400; border-bottom: 3px solid #e67e22; padding-bottom: 10px; !important}</span>
-<span class="s">  h4{ font-family: 'Georgia'!important; color: #d35400; border-bottom: 3px solid #e67e22; padding-bottom: 10px; !important}</span>
-<span class="s">  p { font-family: 'Arial'!important; font-size: 16px; color: #2c2c2c; margin-top: 20px; !important}</span>
-<span class="s">  ul{ color: #34495e; font-size: 16px; !important}</span>
-<span class="s">  table{border-collapse: collapse !important; text-align: center !important;}</span>
-<span class="s">  td{border: 1px solid black !important;}</span>
+<span class="n">custom_css</span> <span class="o">&lt;-</span> <span class="s2">"</span>
+<span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
+  <span class="n">h1</span><span class="p">{</span> <span class="n">font</span><span class="o">-</span><span class="n">family</span><span class="p">:</span> <span class="s1">'Georgia'</span><span class="o">!</span>important<span class="p">;</span><span class="w"> </span>color:<span class="w"> </span>#d35400<span class="p">;</span><span class="w"> </span>border-bottom:<span class="w"> </span>5px<span class="w"> </span>solid<span class="w"> </span>#e67e22<span class="p">;</span><span class="w"> </span>padding-bottom:<span class="w"> </span>10px<span class="p">;</span><span class="w"> </span>!important<span class="w"> </span><span class="o">}</span>
+  <span class="n">h2</span><span class="p">{</span> <span class="n">font</span><span class="o">-</span><span class="n">family</span><span class="p">:</span> <span class="s1">'Georgia'</span><span class="o">!</span>important<span class="p">;</span><span class="w"> </span>color:<span class="w"> </span>#d35400<span class="p">;</span><span class="w"> </span>border-bottom:<span class="w"> </span>3px<span class="w"> </span>solid<span class="w"> </span>#e67e22<span class="p">;</span><span class="w"> </span>padding-bottom:<span class="w"> </span>10px<span class="p">;</span><span class="w"> </span>!important<span class="o">}</span>
+  <span class="n">h3</span><span class="p">{</span> <span class="n">font</span><span class="o">-</span><span class="n">family</span><span class="p">:</span> <span class="s1">'Georgia'</span><span class="o">!</span>important<span class="p">;</span><span class="w"> </span>color:<span class="w"> </span>#d35400<span class="p">;</span><span class="w"> </span>border-bottom:<span class="w"> </span>3px<span class="w"> </span>solid<span class="w"> </span>#e67e22<span class="p">;</span><span class="w"> </span>padding-bottom:<span class="w"> </span>10px<span class="p">;</span><span class="w"> </span>!important<span class="o">}</span>
+  <span class="n">h4</span><span class="p">{</span> <span class="n">font</span><span class="o">-</span><span class="n">family</span><span class="p">:</span> <span class="s1">'Georgia'</span><span class="o">!</span>important<span class="p">;</span><span class="w"> </span>color:<span class="w"> </span>#d35400<span class="p">;</span><span class="w"> </span>border-bottom:<span class="w"> </span>3px<span class="w"> </span>solid<span class="w"> </span>#e67e22<span class="p">;</span><span class="w"> </span>padding-bottom:<span class="w"> </span>10px<span class="p">;</span><span class="w"> </span>!important<span class="o">}</span>
+  <span class="n">p</span> <span class="p">{</span> <span class="n">font</span><span class="o">-</span><span class="n">family</span><span class="p">:</span> <span class="s1">'Arial'</span><span class="o">!</span>important<span class="p">;</span><span class="w"> </span>font-size:<span class="w"> </span>16px<span class="p">;</span><span class="w"> </span>color:<span class="w"> </span>#2c2c2c<span class="p">;</span><span class="w"> </span>margin-top:<span class="w"> </span>20px<span class="p">;</span><span class="w"> </span>!important<span class="o">}</span>
+  <span class="n">ul</span><span class="p">{</span> <span class="n">color</span><span class="p">:</span> <span class="c1">#34495e; font-size: 16px; !important}</span>
+  <span class="n">table</span><span class="p">{</span><span class="n">border</span><span class="o">-</span><span class="n">collapse</span><span class="p">:</span> <span class="n">collapse</span> <span class="o">!</span>important<span class="p">;</span><span class="w"> </span>text-align:<span class="w"> </span>center<span class="w"> </span>!important<span class="p">;</span><span class="o">}</span>
+  <span class="n">td</span><span class="p">{</span><span class="n">border</span><span class="p">:</span> <span class="mi">1</span><span class="n">px</span> <span class="n">solid</span> <span class="n">black</span> <span class="o">!</span>important<span class="p">;</span><span class="o">}</span>
 
-<span class="s">  .reveal .slides section {</span>
-<span class="s">    padding-bottom: 10% !important;</span>
-<span class="s">    box-sizing: border-box !important;</span>
-<span class="s">  }</span>
-<span class="s">&lt;/style&gt;</span>
-<span class="s">"</span>
+  <span class="o">.</span><span class="n">reveal</span> <span class="o">.</span><span class="n">slides</span> <span class="n">section</span> <span class="p">{</span>
+    <span class="n">padding</span><span class="o">-</span><span class="n">bottom</span><span class="p">:</span> <span class="mi">10</span><span class="o">%</span> <span class="o">!</span>important<span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="p">:</span> <span class="n">border</span><span class="o">-</span><span class="n">box</span> <span class="o">!</span>important<span class="p">;</span>
+  <span class="p">}</span>
+<span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
+<span class="s2">"</span>
 <span class="c1"># .reveal .slides section { overflow-y: auto !important; height: 100% !important; }</span>
-<span class="n">IRdisplay</span><span class="o">::</span><span class="nf">display_html</span><span class="p">(</span><span class="n">custom_css</span><span class="p">)</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">base64enc</span><span class="p">)</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">htmltools</span><span class="p">)</span>
+<span class="n">IRdisplay</span><span class="p">::</span><span class="n">display_html</span><span class="p">(</span><span class="n">custom_css</span><span class="p">)</span>
+<span class="n">library</span><span class="p">(</span><span class="n">base64enc</span><span class="p">)</span>
+<span class="n">library</span><span class="p">(</span><span class="n">htmltools</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7821,34 +7821,34 @@ Per il grafico di frequenza basta unire i punti medi della cima di ogni barra (n
 <div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-r"><pre><span></span><span class="n">valori</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span>
-<span class="w">  </span><span class="m">138</span><span class="p">,</span><span class="w"> </span><span class="m">164</span><span class="p">,</span><span class="w"> </span><span class="m">150</span><span class="p">,</span><span class="w"> </span><span class="m">132</span><span class="p">,</span><span class="w"> </span><span class="m">144</span><span class="p">,</span><span class="w"> </span><span class="m">125</span><span class="p">,</span><span class="w"> </span><span class="m">149</span><span class="p">,</span><span class="w"> </span><span class="m">157</span><span class="p">,</span>
-<span class="w">  </span><span class="m">146</span><span class="p">,</span><span class="w"> </span><span class="m">158</span><span class="p">,</span><span class="w"> </span><span class="m">140</span><span class="p">,</span><span class="w"> </span><span class="m">147</span><span class="p">,</span><span class="w"> </span><span class="m">136</span><span class="p">,</span><span class="w"> </span><span class="m">148</span><span class="p">,</span><span class="w"> </span><span class="m">152</span><span class="p">,</span><span class="w"> </span><span class="m">144</span><span class="p">,</span>
-<span class="w">  </span><span class="m">168</span><span class="p">,</span><span class="w"> </span><span class="m">126</span><span class="p">,</span><span class="w"> </span><span class="m">138</span><span class="p">,</span><span class="w"> </span><span class="m">176</span><span class="p">,</span><span class="w"> </span><span class="m">163</span><span class="p">,</span><span class="w"> </span><span class="m">119</span><span class="p">,</span><span class="w"> </span><span class="m">154</span><span class="p">,</span><span class="w"> </span><span class="m">165</span><span class="p">,</span>
-<span class="w">  </span><span class="m">146</span><span class="p">,</span><span class="w"> </span><span class="m">173</span><span class="p">,</span><span class="w"> </span><span class="m">142</span><span class="p">,</span><span class="w"> </span><span class="m">147</span><span class="p">,</span><span class="w"> </span><span class="m">135</span><span class="p">,</span><span class="w"> </span><span class="m">153</span><span class="p">,</span><span class="w"> </span><span class="m">140</span><span class="p">,</span><span class="w"> </span><span class="m">135</span><span class="p">,</span>
-<span class="w">  </span><span class="m">161</span><span class="p">,</span><span class="w"> </span><span class="m">145</span><span class="p">,</span><span class="w"> </span><span class="m">135</span><span class="p">,</span><span class="w"> </span><span class="m">142</span><span class="p">,</span><span class="w"> </span><span class="m">150</span><span class="p">,</span><span class="w"> </span><span class="m">156</span><span class="p">,</span><span class="w"> </span><span class="m">145</span><span class="p">,</span><span class="w"> </span><span class="m">128</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">valori</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span>
+  <span class="mi">138</span><span class="p">,</span> <span class="mi">164</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">132</span><span class="p">,</span> <span class="mi">144</span><span class="p">,</span> <span class="mi">125</span><span class="p">,</span> <span class="mi">149</span><span class="p">,</span> <span class="mi">157</span><span class="p">,</span>
+  <span class="mi">146</span><span class="p">,</span> <span class="mi">158</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">147</span><span class="p">,</span> <span class="mi">136</span><span class="p">,</span> <span class="mi">148</span><span class="p">,</span> <span class="mi">152</span><span class="p">,</span> <span class="mi">144</span><span class="p">,</span>
+  <span class="mi">168</span><span class="p">,</span> <span class="mi">126</span><span class="p">,</span> <span class="mi">138</span><span class="p">,</span> <span class="mi">176</span><span class="p">,</span> <span class="mi">163</span><span class="p">,</span> <span class="mi">119</span><span class="p">,</span> <span class="mi">154</span><span class="p">,</span> <span class="mi">165</span><span class="p">,</span>
+  <span class="mi">146</span><span class="p">,</span> <span class="mi">173</span><span class="p">,</span> <span class="mi">142</span><span class="p">,</span> <span class="mi">147</span><span class="p">,</span> <span class="mi">135</span><span class="p">,</span> <span class="mi">153</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">135</span><span class="p">,</span>
+  <span class="mi">161</span><span class="p">,</span> <span class="mi">145</span><span class="p">,</span> <span class="mi">135</span><span class="p">,</span> <span class="mi">142</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">156</span><span class="p">,</span> <span class="mi">145</span><span class="p">,</span> <span class="mi">128</span>
 <span class="p">)</span>
 
 <span class="c1"># Definizione degli intervalli</span>
-<span class="n">breaks</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">seq</span><span class="p">(</span><span class="m">118</span><span class="p">,</span><span class="w"> </span><span class="m">178</span><span class="p">,</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">)</span><span class="w">  </span><span class="c1"># crea 118, 128, 138, 148, 158, 168, 178</span>
+<span class="n">breaks</span> <span class="o">&lt;-</span> <span class="n">seq</span><span class="p">(</span><span class="mi">118</span><span class="p">,</span> <span class="mi">178</span><span class="p">,</span> <span class="n">by</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>  <span class="c1"># crea 118, 128, 138, 148, 158, 168, 178</span>
 
 <span class="c1"># Conta quanti valori cadono in ciascun intervallo</span>
-<span class="n">frequenze</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">hist</span><span class="p">(</span><span class="n">valori</span><span class="p">,</span><span class="w"> </span><span class="n">breaks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">breaks</span><span class="p">,</span><span class="w"> </span><span class="n">plot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="o">$</span><span class="n">counts</span>
-<span class="n">f</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">frequenze</span><span class="w">                    </span><span class="c1"># frequenza assoluta</span>
-<span class="bp">F</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">valori</span><span class="p">)</span><span class="w">           </span><span class="c1"># frequenza relativa</span>
-<span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">cumsum</span><span class="p">(</span><span class="n">f</span><span class="p">)</span><span class="w">                    </span><span class="c1"># frequenza assoluta cumulata</span>
-<span class="n">P</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">cumsum</span><span class="p">(</span><span class="bp">F</span><span class="p">)</span><span class="w">                    </span><span class="c1"># frequenza relativa cumulata</span>
+<span class="n">frequenze</span> <span class="o">&lt;-</span> <span class="n">hist</span><span class="p">(</span><span class="n">valori</span><span class="p">,</span> <span class="n">breaks</span> <span class="o">=</span> <span class="n">breaks</span><span class="p">,</span> <span class="n">plot</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">)</span><span class="err">$</span><span class="n">counts</span>
+<span class="n">f</span> <span class="o">&lt;-</span> <span class="n">frequenze</span>                    <span class="c1"># frequenza assoluta</span>
+<span class="n">F</span> <span class="o">&lt;-</span> <span class="n">f</span> <span class="o">/</span> <span class="n">length</span><span class="p">(</span><span class="n">valori</span><span class="p">)</span>           <span class="c1"># frequenza relativa</span>
+<span class="n">p</span> <span class="o">&lt;-</span> <span class="n">cumsum</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>                    <span class="c1"># frequenza assoluta cumulata</span>
+<span class="n">P</span> <span class="o">&lt;-</span> <span class="n">cumsum</span><span class="p">(</span><span class="n">F</span><span class="p">)</span>                    <span class="c1"># frequenza relativa cumulata</span>
 
 <span class="c1"># Stampa risultati</span>
-<span class="n">tabella</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">data.frame</span><span class="p">(</span>
-<span class="w">  </span><span class="n">Intervallo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="nf">head</span><span class="p">(</span><span class="n">breaks</span><span class="p">,</span><span class="w"> </span><span class="m">-1</span><span class="p">),</span><span class="w"> </span><span class="s">"⊣"</span><span class="p">,</span><span class="w"> </span><span class="nf">tail</span><span class="p">(</span><span class="n">breaks</span><span class="p">,</span><span class="w"> </span><span class="m">-1</span><span class="p">)),</span>
-<span class="w">  </span><span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">f</span><span class="p">,</span>
-<span class="w">  </span><span class="bp">F</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">F</span><span class="p">,</span>
-<span class="w">  </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">,</span>
-<span class="w">  </span><span class="n">P</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">P</span>
+<span class="n">tabella</span> <span class="o">&lt;-</span> <span class="n">data</span><span class="o">.</span><span class="n">frame</span><span class="p">(</span>
+  <span class="n">Intervallo</span> <span class="o">=</span> <span class="n">paste</span><span class="p">(</span><span class="n">head</span><span class="p">(</span><span class="n">breaks</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="s2">"⊣"</span><span class="p">,</span> <span class="n">tail</span><span class="p">(</span><span class="n">breaks</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)),</span>
+  <span class="n">f</span> <span class="o">=</span> <span class="n">f</span><span class="p">,</span>
+  <span class="n">F</span> <span class="o">=</span> <span class="n">F</span><span class="p">,</span>
+  <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="p">,</span>
+  <span class="n">P</span> <span class="o">=</span> <span class="n">P</span>
 <span class="p">)</span>
 
-<span class="nf">print</span><span class="p">(</span><span class="n">tabella</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tabella</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8029,31 +8029,31 @@ autovetture.</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-r"><pre><span></span><span class="nf">par</span><span class="p">(</span><span class="n">mfrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">par</span><span class="p">(</span><span class="n">mfrow</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
 
-<span class="n">valori_fiat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0.225</span><span class="p">,</span><span class="w"> </span><span class="m">0.325</span><span class="p">,</span><span class="w"> </span><span class="m">0.25</span><span class="p">,</span><span class="w"> </span><span class="m">0.125</span><span class="p">,</span><span class="w"> </span><span class="m">0.075</span><span class="p">)</span>
-<span class="n">nomi</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">"0"</span><span class="p">,</span><span class="w"> </span><span class="s">"1"</span><span class="p">,</span><span class="w"> </span><span class="s">"2"</span><span class="p">,</span><span class="w"> </span><span class="s">"3"</span><span class="p">,</span><span class="w"> </span><span class="s">"4"</span><span class="p">)</span>
+<span class="n">valori_fiat</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="mf">0.225</span><span class="p">,</span> <span class="mf">0.325</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.125</span><span class="p">,</span> <span class="mf">0.075</span><span class="p">)</span>
+<span class="n">nomi</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="s2">"0"</span><span class="p">,</span> <span class="s2">"1"</span><span class="p">,</span> <span class="s2">"2"</span><span class="p">,</span> <span class="s2">"3"</span><span class="p">,</span> <span class="s2">"4"</span><span class="p">)</span>
 
-<span class="nf">barplot</span><span class="p">(</span><span class="n">valori_fiat</span><span class="p">,</span><span class="w"> </span><span class="n">names.arg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nomi</span><span class="p">,</span><span class="w"> </span>
-<span class="w">        </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Autovetture FIAT"</span><span class="p">,</span>
-<span class="w">        </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Numero guasti"</span><span class="p">,</span>
-<span class="w">        </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Numero vetture"</span><span class="p">,</span>
-<span class="w">        </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"lightblue"</span><span class="p">,</span><span class="w"> </span>
-<span class="w">        </span><span class="n">border</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"darkblue"</span><span class="p">)</span>
+<span class="n">barplot</span><span class="p">(</span><span class="n">valori_fiat</span><span class="p">,</span> <span class="n">names</span><span class="o">.</span><span class="n">arg</span> <span class="o">=</span> <span class="n">nomi</span><span class="p">,</span> 
+        <span class="n">main</span> <span class="o">=</span> <span class="s2">"Autovetture FIAT"</span><span class="p">,</span>
+        <span class="n">xlab</span> <span class="o">=</span> <span class="s2">"Numero guasti"</span><span class="p">,</span>
+        <span class="n">ylab</span> <span class="o">=</span> <span class="s2">"Numero vetture"</span><span class="p">,</span>
+        <span class="n">col</span> <span class="o">=</span> <span class="s2">"lightblue"</span><span class="p">,</span> 
+        <span class="n">border</span> <span class="o">=</span> <span class="s2">"darkblue"</span><span class="p">)</span>
 
 <span class="c1"># --- Secondo grafico ---</span>
-<span class="n">valori_opel</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0.55</span><span class="p">,</span><span class="w"> </span><span class="m">0.33333</span><span class="p">,</span><span class="w"> </span><span class="m">0.1</span><span class="p">,</span><span class="w"> </span><span class="m">0.0166667</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
+<span class="n">valori_opel</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="mf">0.55</span><span class="p">,</span> <span class="mf">0.33333</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.0166667</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 
-<span class="n">valori_opel</span><span class="p">[</span><span class="n">valori_opel</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">NA</span><span class="w">  </span><span class="c1"># Turn zeros into NA</span>
+<span class="n">valori_opel</span><span class="p">[</span><span class="n">valori_opel</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="n">NA</span>  <span class="c1"># Turn zeros into NA</span>
 
-<span class="nf">barplot</span><span class="p">(</span><span class="n">valori_opel</span><span class="p">,</span><span class="w"> </span><span class="n">names.arg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nomi</span><span class="p">,</span><span class="w"> </span>
-<span class="w">        </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Autovetture OPEL"</span><span class="p">,</span>
-<span class="w">        </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Numero guasti"</span><span class="p">,</span>
-<span class="w">        </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Numero vetture"</span><span class="p">,</span>
-<span class="w">        </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"lightgreen"</span><span class="p">,</span><span class="w"> </span>
-<span class="w">        </span><span class="n">border</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"darkgreen"</span><span class="p">)</span>
+<span class="n">barplot</span><span class="p">(</span><span class="n">valori_opel</span><span class="p">,</span> <span class="n">names</span><span class="o">.</span><span class="n">arg</span> <span class="o">=</span> <span class="n">nomi</span><span class="p">,</span> 
+        <span class="n">main</span> <span class="o">=</span> <span class="s2">"Autovetture OPEL"</span><span class="p">,</span>
+        <span class="n">xlab</span> <span class="o">=</span> <span class="s2">"Numero guasti"</span><span class="p">,</span>
+        <span class="n">ylab</span> <span class="o">=</span> <span class="s2">"Numero vetture"</span><span class="p">,</span>
+        <span class="n">col</span> <span class="o">=</span> <span class="s2">"lightgreen"</span><span class="p">,</span> 
+        <span class="n">border</span> <span class="o">=</span> <span class="s2">"darkgreen"</span><span class="p">)</span>
 
-<span class="nf">par</span><span class="p">(</span><span class="n">mfrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">))</span>
+<span class="n">par</span><span class="p">(</span><span class="n">mfrow</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -8511,19 +8511,19 @@ campo di variazione, lo scarto interquartilico, la varianza e il coefficiente di
 <div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-r"><pre><span></span><span class="n">intervalli</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">"50-59"</span><span class="p">,</span><span class="w"> </span><span class="s">"60-69"</span><span class="p">,</span><span class="w"> </span><span class="s">"70-79"</span><span class="p">,</span><span class="s">"80-89"</span><span class="p">,</span><span class="s">"90-99"</span><span class="p">)</span>
-<span class="n">valori</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="m">13</span><span class="p">,</span><span class="m">31</span><span class="p">,</span><span class="m">17</span><span class="p">,</span><span class="m">16</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">intervalli</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"50-59"</span><span class="p">,</span> <span class="s2">"60-69"</span><span class="p">,</span> <span class="s2">"70-79"</span><span class="p">,</span><span class="s2">"80-89"</span><span class="p">,</span><span class="s2">"90-99"</span><span class="p">)</span>
+<span class="n">valori</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">31</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">16</span><span class="p">)</span>
 <span class="c1"># compute relative frequencies</span>
-<span class="n">rel_freq</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">valori</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="n">valori</span><span class="p">)</span>
+<span class="n">rel_freq</span> <span class="o">&lt;-</span> <span class="n">valori</span> <span class="o">/</span> <span class="nb">sum</span><span class="p">(</span><span class="n">valori</span><span class="p">)</span>
 
 <span class="c1"># plot</span>
-<span class="nf">barplot</span><span class="p">(</span><span class="n">rel_freq</span><span class="p">,</span>
-<span class="w">        </span><span class="n">names.arg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">intervalli</span><span class="p">,</span>
-<span class="w">        </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Distribuzione voti (frequenze relative)"</span><span class="p">,</span>
-<span class="w">        </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Classe di valori"</span><span class="p">,</span>
-<span class="w">        </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Frequenza relativa"</span><span class="p">,</span>
-<span class="w">        </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"lightblue"</span><span class="p">,</span>
-<span class="w">        </span><span class="n">ylim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">0.4</span><span class="p">))</span><span class="w"> </span>
+<span class="n">barplot</span><span class="p">(</span><span class="n">rel_freq</span><span class="p">,</span>
+        <span class="n">names</span><span class="o">.</span><span class="n">arg</span> <span class="o">=</span> <span class="n">intervalli</span><span class="p">,</span>
+        <span class="n">main</span> <span class="o">=</span> <span class="s2">"Distribuzione voti (frequenze relative)"</span><span class="p">,</span>
+        <span class="n">xlab</span> <span class="o">=</span> <span class="s2">"Classe di valori"</span><span class="p">,</span>
+        <span class="n">ylab</span> <span class="o">=</span> <span class="s2">"Frequenza relativa"</span><span class="p">,</span>
+        <span class="n">col</span> <span class="o">=</span> <span class="s2">"lightblue"</span><span class="p">,</span>
+        <span class="n">ylim</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">))</span> 
 </pre></div>
 </div>
 </div>
@@ -8767,24 +8767,24 @@ Per ottenere la <em><strong>Media aritmetica</strong></em>  dobbiamo usare la fo
 <div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-r"><pre><span></span><span class="n">votazioni</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span>
-<span class="w">  </span><span class="m">68</span><span class="p">,</span><span class="m">84</span><span class="p">,</span><span class="m">75</span><span class="p">,</span><span class="m">82</span><span class="p">,</span><span class="m">68</span><span class="p">,</span><span class="m">90</span><span class="p">,</span><span class="m">62</span><span class="p">,</span><span class="m">88</span><span class="p">,</span><span class="m">76</span><span class="p">,</span><span class="m">93</span><span class="p">,</span>
-<span class="w">  </span><span class="m">73</span><span class="p">,</span><span class="m">79</span><span class="p">,</span><span class="m">88</span><span class="p">,</span><span class="m">73</span><span class="p">,</span><span class="m">60</span><span class="p">,</span><span class="m">93</span><span class="p">,</span><span class="m">71</span><span class="p">,</span><span class="m">59</span><span class="p">,</span><span class="m">85</span><span class="p">,</span><span class="m">75</span><span class="p">,</span>
-<span class="w">  </span><span class="m">61</span><span class="p">,</span><span class="m">65</span><span class="p">,</span><span class="m">75</span><span class="p">,</span><span class="m">87</span><span class="p">,</span><span class="m">74</span><span class="p">,</span><span class="m">62</span><span class="p">,</span><span class="m">95</span><span class="p">,</span><span class="m">78</span><span class="p">,</span><span class="m">63</span><span class="p">,</span><span class="m">72</span><span class="p">,</span>
-<span class="w">  </span><span class="m">66</span><span class="p">,</span><span class="m">78</span><span class="p">,</span><span class="m">82</span><span class="p">,</span><span class="m">75</span><span class="p">,</span><span class="m">94</span><span class="p">,</span><span class="m">77</span><span class="p">,</span><span class="m">69</span><span class="p">,</span><span class="m">74</span><span class="p">,</span><span class="m">68</span><span class="p">,</span><span class="m">60</span><span class="p">,</span>
-<span class="w">  </span><span class="m">96</span><span class="p">,</span><span class="m">78</span><span class="p">,</span><span class="m">89</span><span class="p">,</span><span class="m">61</span><span class="p">,</span><span class="m">75</span><span class="p">,</span><span class="m">95</span><span class="p">,</span><span class="m">60</span><span class="p">,</span><span class="m">79</span><span class="p">,</span><span class="m">83</span><span class="p">,</span><span class="m">71</span><span class="p">,</span>
-<span class="w">  </span><span class="m">79</span><span class="p">,</span><span class="m">62</span><span class="p">,</span><span class="m">67</span><span class="p">,</span><span class="m">97</span><span class="p">,</span><span class="m">78</span><span class="p">,</span><span class="m">85</span><span class="p">,</span><span class="m">76</span><span class="p">,</span><span class="m">65</span><span class="p">,</span><span class="m">71</span><span class="p">,</span><span class="m">75</span><span class="p">,</span>
-<span class="w">  </span><span class="m">65</span><span class="p">,</span><span class="m">80</span><span class="p">,</span><span class="m">73</span><span class="p">,</span><span class="m">57</span><span class="p">,</span><span class="m">88</span><span class="p">,</span><span class="m">78</span><span class="p">,</span><span class="m">62</span><span class="p">,</span><span class="m">76</span><span class="p">,</span><span class="m">53</span><span class="p">,</span><span class="m">74</span><span class="p">,</span>
-<span class="w">  </span><span class="m">86</span><span class="p">,</span><span class="m">67</span><span class="p">,</span><span class="m">73</span><span class="p">,</span><span class="m">81</span><span class="p">,</span><span class="m">72</span><span class="p">,</span><span class="m">63</span><span class="p">,</span><span class="m">76</span><span class="p">,</span><span class="m">75</span><span class="p">,</span><span class="m">85</span><span class="p">,</span><span class="m">77</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">votazioni</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span>
+  <span class="mi">68</span><span class="p">,</span><span class="mi">84</span><span class="p">,</span><span class="mi">75</span><span class="p">,</span><span class="mi">82</span><span class="p">,</span><span class="mi">68</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">62</span><span class="p">,</span><span class="mi">88</span><span class="p">,</span><span class="mi">76</span><span class="p">,</span><span class="mi">93</span><span class="p">,</span>
+  <span class="mi">73</span><span class="p">,</span><span class="mi">79</span><span class="p">,</span><span class="mi">88</span><span class="p">,</span><span class="mi">73</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">93</span><span class="p">,</span><span class="mi">71</span><span class="p">,</span><span class="mi">59</span><span class="p">,</span><span class="mi">85</span><span class="p">,</span><span class="mi">75</span><span class="p">,</span>
+  <span class="mi">61</span><span class="p">,</span><span class="mi">65</span><span class="p">,</span><span class="mi">75</span><span class="p">,</span><span class="mi">87</span><span class="p">,</span><span class="mi">74</span><span class="p">,</span><span class="mi">62</span><span class="p">,</span><span class="mi">95</span><span class="p">,</span><span class="mi">78</span><span class="p">,</span><span class="mi">63</span><span class="p">,</span><span class="mi">72</span><span class="p">,</span>
+  <span class="mi">66</span><span class="p">,</span><span class="mi">78</span><span class="p">,</span><span class="mi">82</span><span class="p">,</span><span class="mi">75</span><span class="p">,</span><span class="mi">94</span><span class="p">,</span><span class="mi">77</span><span class="p">,</span><span class="mi">69</span><span class="p">,</span><span class="mi">74</span><span class="p">,</span><span class="mi">68</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span>
+  <span class="mi">96</span><span class="p">,</span><span class="mi">78</span><span class="p">,</span><span class="mi">89</span><span class="p">,</span><span class="mi">61</span><span class="p">,</span><span class="mi">75</span><span class="p">,</span><span class="mi">95</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">79</span><span class="p">,</span><span class="mi">83</span><span class="p">,</span><span class="mi">71</span><span class="p">,</span>
+  <span class="mi">79</span><span class="p">,</span><span class="mi">62</span><span class="p">,</span><span class="mi">67</span><span class="p">,</span><span class="mi">97</span><span class="p">,</span><span class="mi">78</span><span class="p">,</span><span class="mi">85</span><span class="p">,</span><span class="mi">76</span><span class="p">,</span><span class="mi">65</span><span class="p">,</span><span class="mi">71</span><span class="p">,</span><span class="mi">75</span><span class="p">,</span>
+  <span class="mi">65</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">73</span><span class="p">,</span><span class="mi">57</span><span class="p">,</span><span class="mi">88</span><span class="p">,</span><span class="mi">78</span><span class="p">,</span><span class="mi">62</span><span class="p">,</span><span class="mi">76</span><span class="p">,</span><span class="mi">53</span><span class="p">,</span><span class="mi">74</span><span class="p">,</span>
+  <span class="mi">86</span><span class="p">,</span><span class="mi">67</span><span class="p">,</span><span class="mi">73</span><span class="p">,</span><span class="mi">81</span><span class="p">,</span><span class="mi">72</span><span class="p">,</span><span class="mi">63</span><span class="p">,</span><span class="mi">76</span><span class="p">,</span><span class="mi">75</span><span class="p">,</span><span class="mi">85</span><span class="p">,</span><span class="mi">77</span>
 <span class="p">)</span>
-<span class="nf">boxplot</span><span class="p">(</span>
-<span class="w">  </span><span class="n">votazioni</span><span class="p">,</span>
-<span class="w">  </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Boxplot of Admission Test Scores"</span><span class="p">,</span>
-<span class="w">  </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Score (in hundredths)"</span><span class="p">,</span>
-<span class="w">  </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"skyblue"</span><span class="p">,</span>
-<span class="w">  </span><span class="n">border</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"darkblue"</span>
+<span class="n">boxplot</span><span class="p">(</span>
+  <span class="n">votazioni</span><span class="p">,</span>
+  <span class="n">main</span> <span class="o">=</span> <span class="s2">"Boxplot of Admission Test Scores"</span><span class="p">,</span>
+  <span class="n">ylab</span> <span class="o">=</span> <span class="s2">"Score (in hundredths)"</span><span class="p">,</span>
+  <span class="n">col</span> <span class="o">=</span> <span class="s2">"skyblue"</span><span class="p">,</span>
+  <span class="n">border</span> <span class="o">=</span> <span class="s2">"darkblue"</span>
 <span class="p">)</span>
-<span class="nf">summary</span><span class="p">(</span><span class="n">votazioni</span><span class="p">)</span>
+<span class="n">summary</span><span class="p">(</span><span class="n">votazioni</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -9105,40 +9105,40 @@ convenienti assunzioni semplificative, si calcoli la media aritmetica e la varia
 <div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-r"><pre><span></span><span class="c1"># Absolute frequencies (number of employees)</span>
-<span class="n">freq</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">8</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">16</span><span class="p">,</span><span class="w"> </span><span class="m">14</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">)</span>
-<span class="nf">par</span><span class="p">(</span><span class="n">mfrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">),</span><span class="w"> </span><span class="n">mar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">))</span>
-<span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">12</span><span class="p">,</span><span class="w"> </span><span class="n">repr.plot.height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Absolute frequencies (number of employees)</span>
+<span class="n">freq</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">par</span><span class="p">(</span><span class="n">mfrow</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">mar</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="n">options</span><span class="p">(</span><span class="nb">repr</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="mi">12</span><span class="p">,</span> <span class="nb">repr</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>
 
 <span class="c1"># Class intervals (for labels)</span>
-<span class="n">classes</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">"1000–1100"</span><span class="p">,</span><span class="w"> </span><span class="s">"1100–1200"</span><span class="p">,</span><span class="w"> </span><span class="s">"1200–1300"</span><span class="p">,</span>
-<span class="w">             </span><span class="s">"1300–1400"</span><span class="p">,</span><span class="w"> </span><span class="s">"1400–1500"</span><span class="p">,</span><span class="w"> </span><span class="s">"1500–1800"</span><span class="p">,</span><span class="w"> </span><span class="s">"1800–2500"</span><span class="p">)</span>
+<span class="n">classes</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="s2">"1000–1100"</span><span class="p">,</span> <span class="s2">"1100–1200"</span><span class="p">,</span> <span class="s2">"1200–1300"</span><span class="p">,</span>
+             <span class="s2">"1300–1400"</span><span class="p">,</span> <span class="s2">"1400–1500"</span><span class="p">,</span> <span class="s2">"1500–1800"</span><span class="p">,</span> <span class="s2">"1800–2500"</span><span class="p">)</span>
 
 <span class="c1"># Midpoints of each class (used for the frequency polygon)</span>
-<span class="n">midpoints</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1050</span><span class="p">,</span><span class="w"> </span><span class="m">1150</span><span class="p">,</span><span class="w"> </span><span class="m">1250</span><span class="p">,</span><span class="w"> </span><span class="m">1350</span><span class="p">,</span><span class="w"> </span><span class="m">1450</span><span class="p">,</span><span class="w"> </span><span class="m">1650</span><span class="p">,</span><span class="w"> </span><span class="m">2150</span><span class="p">)</span>
+<span class="n">midpoints</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="mi">1050</span><span class="p">,</span> <span class="mi">1150</span><span class="p">,</span> <span class="mi">1250</span><span class="p">,</span> <span class="mi">1350</span><span class="p">,</span> <span class="mi">1450</span><span class="p">,</span> <span class="mi">1650</span><span class="p">,</span> <span class="mi">2150</span><span class="p">)</span>
 
 <span class="c1"># Class widths</span>
-<span class="n">width</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">100</span><span class="p">,</span><span class="w"> </span><span class="m">100</span><span class="p">,</span><span class="w"> </span><span class="m">100</span><span class="p">,</span><span class="w"> </span><span class="m">100</span><span class="p">,</span><span class="w"> </span><span class="m">100</span><span class="p">,</span><span class="w"> </span><span class="m">300</span><span class="p">,</span><span class="w"> </span><span class="m">700</span><span class="p">)</span>
+<span class="n">width</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">700</span><span class="p">)</span>
 
 <span class="c1"># Frequency densities</span>
-<span class="n">density</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">freq</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">width</span>
+<span class="n">density</span> <span class="o">&lt;-</span> <span class="n">freq</span> <span class="o">/</span> <span class="n">width</span>
 
 <span class="c1"># Left limits of classes</span>
-<span class="n">left</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1000</span><span class="p">,</span><span class="w"> </span><span class="m">1100</span><span class="p">,</span><span class="w"> </span><span class="m">1200</span><span class="p">,</span><span class="w"> </span><span class="m">1300</span><span class="p">,</span><span class="w"> </span><span class="m">1400</span><span class="p">,</span><span class="w"> </span><span class="m">1500</span><span class="p">,</span><span class="w"> </span><span class="m">1800</span><span class="p">)</span>
+<span class="n">left</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">1100</span><span class="p">,</span> <span class="mi">1200</span><span class="p">,</span> <span class="mi">1300</span><span class="p">,</span> <span class="mi">1400</span><span class="p">,</span> <span class="mi">1500</span><span class="p">,</span> <span class="mi">1800</span><span class="p">)</span>
 
 <span class="c1"># Plot histogram manually</span>
-<span class="nf">plot</span><span class="p">(</span><span class="kc">NULL</span><span class="p">,</span><span class="w"> </span><span class="n">xlim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1000</span><span class="p">,</span><span class="w"> </span><span class="m">2500</span><span class="p">),</span><span class="w"> </span><span class="n">ylim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="nf">max</span><span class="p">(</span><span class="n">density</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">1.2</span><span class="p">),</span>
-<span class="w">     </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Istogramma degli Stipendi (densità di frequenza)"</span><span class="p">,</span>
-<span class="w">     </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Stipendio (€)"</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Densità di frequenza"</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">NULL</span><span class="p">,</span> <span class="n">xlim</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">2500</span><span class="p">),</span> <span class="n">ylim</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">density</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1.2</span><span class="p">),</span>
+     <span class="n">main</span> <span class="o">=</span> <span class="s2">"Istogramma degli Stipendi (densità di frequenza)"</span><span class="p">,</span>
+     <span class="n">xlab</span> <span class="o">=</span> <span class="s2">"Stipendio (€)"</span><span class="p">,</span> <span class="n">ylab</span> <span class="o">=</span> <span class="s2">"Densità di frequenza"</span><span class="p">)</span>
 
 <span class="c1"># Draw rectangles</span>
-<span class="kr">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="nf">length</span><span class="p">(</span><span class="n">freq</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nf">rect</span><span class="p">(</span><span class="n">left</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">left</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">width</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">density</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
-<span class="w">       </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"lightblue"</span><span class="p">,</span><span class="w"> </span><span class="n">border</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"darkblue"</span><span class="p">)</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="ow">in</span> <span class="mi">1</span><span class="p">:</span><span class="n">length</span><span class="p">(</span><span class="n">freq</span><span class="p">))</span> <span class="p">{</span>
+  <span class="n">rect</span><span class="p">(</span><span class="n">left</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="n">left</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">width</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">density</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+       <span class="n">col</span> <span class="o">=</span> <span class="s2">"lightblue"</span><span class="p">,</span> <span class="n">border</span> <span class="o">=</span> <span class="s2">"darkblue"</span><span class="p">)</span>
 <span class="p">}</span>
-<span class="nf">plot</span><span class="p">(</span><span class="n">midpoints</span><span class="p">,</span><span class="w"> </span><span class="n">freq</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"b"</span><span class="p">,</span><span class="w"> </span><span class="n">pch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">19</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"blue"</span><span class="p">,</span>
-<span class="w">     </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Poligono di frequenza degli stipendi"</span><span class="p">,</span>
-<span class="w">     </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Stipendio (€)"</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Numero di dipendenti"</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">midpoints</span><span class="p">,</span> <span class="n">freq</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="s2">"b"</span><span class="p">,</span> <span class="n">pch</span> <span class="o">=</span> <span class="mi">19</span><span class="p">,</span> <span class="n">col</span> <span class="o">=</span> <span class="s2">"blue"</span><span class="p">,</span>
+     <span class="n">main</span> <span class="o">=</span> <span class="s2">"Poligono di frequenza degli stipendi"</span><span class="p">,</span>
+     <span class="n">xlab</span> <span class="o">=</span> <span class="s2">"Stipendio (€)"</span><span class="p">,</span> <span class="n">ylab</span> <span class="o">=</span> <span class="s2">"Numero di dipendenti"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -10534,16 +10534,16 @@ determini il valore atteso, la moda, la mediana e la varianza di X.
 <div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-r"><pre><span></span><span class="n">f</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kr">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nf">ifelse</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">-0.5</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span>
-<span class="w">    </span><span class="nf">ifelse</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">0.5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">2</span><span class="o">*</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">2</span><span class="o">*</span><span class="n">x</span><span class="o">^</span><span class="m">2</span><span class="p">,</span>
-<span class="w">      </span><span class="nf">ifelse</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span><span class="w"> </span><span class="m">0.5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">2</span><span class="o">*</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="m">2</span><span class="o">*</span><span class="n">x</span><span class="o">^</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
-<span class="w">    </span><span class="p">)</span>
-<span class="w">  </span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">f</span> <span class="o">&lt;-</span> <span class="n">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">ifelse</span><span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="n">ifelse</span><span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="o">^</span><span class="mi">2</span><span class="p">,</span>
+      <span class="n">ifelse</span><span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="o">^</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="p">)</span>
+  <span class="p">)</span>
 <span class="p">}</span>
 
-<span class="n">x</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">seq</span><span class="p">(</span><span class="m">-1</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">length.out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">400</span><span class="p">)</span>
-<span class="n">y</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">&lt;-</span> <span class="n">seq</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">length</span><span class="o">.</span><span class="n">out</span> <span class="o">=</span> <span class="mi">400</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">&lt;-</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -10569,10 +10569,10 @@ determini il valore atteso, la moda, la mediana e la varianza di X.
 <div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-r"><pre><span></span><span class="nf">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"l"</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"blue"</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span>
-<span class="w">     </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"x"</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"f(x)"</span><span class="p">,</span>
-<span class="w">     </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Funzione a tratti"</span><span class="p">)</span>
-<span class="nf">grid</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="s2">"l"</span><span class="p">,</span> <span class="n">col</span> <span class="o">=</span> <span class="s2">"blue"</span><span class="p">,</span> <span class="n">lwd</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+     <span class="n">xlab</span> <span class="o">=</span> <span class="s2">"x"</span><span class="p">,</span> <span class="n">ylab</span> <span class="o">=</span> <span class="s2">"f(x)"</span><span class="p">,</span>
+     <span class="n">main</span> <span class="o">=</span> <span class="s2">"Funzione a tratti"</span><span class="p">)</span>
+<span class="n">grid</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -11484,6 +11484,167 @@ il 2.5% superiore della distribuzione di probabilità si X.</p>
 </div>
 </div>
 </div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1bce6704-a104-4712-805c-13101cbcf65c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="B.28)">B.28)<a class="anchor-link" href="#B.28)">¶</a></h3><p>La durata di un circuito integrato è descritta da una variabile casuale con distribuzione
+esponenziale con media pari 2 anni. Si determini la probabilità che il circuito duri più di 3 anni.
+Inoltre, nell’ipotesi che il circuito dopo 4 anni sia ancora funzionante, si calcolo la probabilità che
+funzioni per almeno altri 3 anni.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a430af3c-6521-407b-8fb2-7d4920a6c050">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Risoluzione:">Risoluzione:<a class="anchor-link" href="#Risoluzione:">¶</a></h4><p>$λ=\frac{1}{T}=\frac{1}{2}$<br/>
+<strong>Probabilità soppravvivenza:</strong> <br/>
+$P(T&gt;t)=e^{-λt}= e^{-\frac{1}{2}}$ <br/>
+<strong>probabilità durata &gt; 3 anni:</strong> <br/>
+$P(T&gt;3)=e^{-\frac32} = 0,223$ <br/>
+<strong>Proprietà fondamentale: assenza di memoria:</strong> <br/>
+$P(T&gt;s+t∣T&gt;s)=P(T&gt;t)$: Il tempo già trascorso non influenza il tempo futuro di funzionamento. <br/>
+<strong>Probabilità che funzioni per almeno altri 3 anni:</strong> <br/>
+medesima del caso prima: 0,223</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b5281502-fb4f-460d-9128-30ab42a4e836">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="B.29)">B.29)<a class="anchor-link" href="#B.29)">¶</a></h3><p>La variabile casuale X, che descrive il numero di difetti in un fi lo di rame di lunghezza 3
+cm, ha la seguente distribuzione di probabilità:</p>
+<table>
+<thead>
+<tr>
+<th>$x$</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P(X = x)$</td>
+<td>0.48</td>
+<td>0.39</td>
+<td>0.12</td>
+<td>0.01</td>
+</tr>
+</tbody>
+</table>
+<p>Si considerano 100 fili di rame. Utilizzando una opportuna approssimazione, si determini la probabilità che il numero medio di difetti per filo, considerando i 100 fili in esame, sia minore di 0.5 e la
+probabilità che la somma totale dei difetti riscontrati nei 100 fili sia minore di 25.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=92c632bf-ba17-4194-9aca-e3ae63f1edcd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="risoluzione:">risoluzione:<a class="anchor-link" href="#risoluzione:">¶</a></h4><p><strong>Variabile casuale di base:</strong> <br/></p>
+<table>
+<thead>
+<tr>
+<th>$x$</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P(X = x)$</td>
+<td>0.48</td>
+<td>0.39</td>
+<td>0.12</td>
+<td>0.01</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Calcolo di media e varianza di 𝑋:</strong> <br/>
+<em>Valore atteso:</em> <br/>
+$E[X]= \sum x \cdot P(X=x)= 0 \cdot 0.48 + 1 \cdot 0.39 + 2 \cdot 0.12 + 3 \cdot 0.01= 0.66$ <br/></p>
+<p><em>Secondo momento:</em> <br/>
+$E[X^2]=0^2 \cdot 0.48 + 1^2 \cdot 0.39 + 2^2 \cdot 0.12 + 3^2 \cdot 0.01= 0.96 $ <br/></p>
+<p><em>varianza:</em> <br/>
+$Var(X)= E[X^2]- (E[X])^2 = 0.96−(0.66)^2=0.96−0.4356=0.5244$ <br/>
+$\sigma ^ 2 = 0.5244 \vee \sigma = 0.724$ <br/></p>
+<p><strong>Numero medio di difetti nei 100 fili:</strong> <br/>
+$$\overline{\rm X}_{100}= \frac{1}{100} \sum^{100}_{i=1}X_i$$
+$E[\overline{\rm X}_{100}]=μ=0.66$ <br/>
+$Var(\overline{\rm X}_{100}= \frac{\sigma ^ 2}{100}) \implies \sigma_{\overline{\rm X}}=\frac{0.724}{\sqrt{100}}=0.0724$ <br/></p>
+<p><strong>Approssimazione: Teorema del Limite Centrale:</strong> <br/>
+$\overline{\rm X}_{100}  \approx N(0.66, 0.0724^2)$ <br/></p>
+<p><strong>Probabilità che il numero medio sia minore di 0.5:</strong> <br/>
+$P(\overline{\rm X}_{100}) &lt; 0.5)$ <br/>
+$Z=\frac{0.5-0.66}{0.0724} \approx  -2.21 \implies P(Z&lt;−2.21) \approx 0.0136 \implies P(\overline{\rm X}_{100} &lt; 0.5) \approx 0.014$ <br/></p>
+<p><strong>Somma totale dei difetti nei 100 fili:</strong> <br/>
+$S_{100}=\sum^{100}_{i=1}X_i$ <br/>
+<em>Media e deviazione standard:</em> <br/>
+$E[S_{100}]=100 \cdot 0.66= 66$ <br/>
+$\sigma ^ 2 = \sqrt{100} \cdot 0.724 = 7.24$ <br/></p>
+<p><strong>Approssimazione normale della somma</strong> <br/>
+$S_{100} \approx N(66, 7.24^2)$ <br/>
+$P(S_{100} &lt; 25)$ <br/>
+<em>Standardizzazione:</em> <br/>
+$Z=\frac{25-66}{7.24} \approx -5.66$ <br/>
+<strong>Probabiltà finale</strong> <br/>
+$P(Z&lt;-5.66) \approx 0$</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5e84fa86-da31-429c-8def-5b12fff893ee">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="B.30)">B.30)<a class="anchor-link" href="#B.30)">¶</a></h3><p>Il numero medio di connessioni ad un sito web segue una distribuzione di poisson con una
+media di 27 connessioni all’ora. Si determini la probabilità che avvengano più di 90 connessioni in
+tre ore.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8000cd66-3bf7-43cb-9867-8d467d6de0bc">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Calcoli:">Calcoli:<a class="anchor-link" href="#Calcoli:">¶</a></h4><p>λ= 27 connessioni/ora <br/>
+$λ_{3h}=27 \cdot 3 = 81$ <br/>
+$N \sim Poisson(81)$ <br/></p>
+<p><strong>Approssimazione normale della Poisson:</strong> <br/>
+$Poisson(λ) \approx N(\mu = \lambda, \sigma ^2 = \lambda) = N(81,81)$ <br/></p>
+<p><strong>Correzione di continuità:</strong> <br/>
+$P(N&gt;90) \approx P(N \geq 91) \approx P(N&gt;90.5)$ <br/></p>
+<p><strong>Standardizzazione:</strong> <br/>
+$Z=\frac{90.5 - 81}{9}=\frac{9.5}{9} \approx 1.06$ <br/></p>
+<p><strong>Calcolo probabilità:</strong> <br/>
+$P(Z&lt;1.06) \approx 0.855 \implies P(Z&gt;1.06)=1-0.855 = 0.145$</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f1405ec0-299e-40be-bec2-e91d0b74d26a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -11504,29 +11665,95 @@ N(36.5, 6.25), si determini l’ampiezza dei sedili che li rende accessibili al 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Calcoli:">Calcoli:<a class="anchor-link" href="#Calcoli:">¶</a></h4><p>
-    \(  P(X&lt;=x)=0,95 \)
-</p>
-<p>
-    \( \frac{X-36,5}{\sqrt{6,25}}(=z)&lt;=\frac{x-36,5}{\sqrt{6,25}}(= z 0,05=1,65) \)
-</p>
-<p>
-    \(   \)
-</p>
+<h4 id="Calcoli:">Calcoli:<a class="anchor-link" href="#Calcoli:">¶</a></h4><p>$X\sim N(36.5, 6.25) \implies \mu = 36.5cm, \sigma ^2 = 6.25, \sigma = \sqrt{6.25}=2.5cm$ <br/></p>
+<p>$P(X \leq w)= 0.95$ <br/></p>
+<p><strong>Standardizzazione:</strong> <br/>
+$Z=\frac{X- \mu}{\sigma} \sim N(0,1) \implies P(Z \leq \frac{w- 36.5}{2.5})=0.95$ <br/></p>
+<p><strong>Quantile della normale standard:</strong> <br/>
+$P(Z \leq z_{0.95})=0.95 \implies z_{0.95}=1.645$</p>
+<p><strong>Calcolo della larghezza del sedile:</strong> <br/>
+$\frac{w-36.5}{2.5}=1.645 \implies w= 36.5 +1.645 \cdot 2.5 \approx 40.6cm$</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3c1edf23-5ab2-42b0-8a9b-8a12ecd38d4f">
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3c1edf23-5ab2-42b0-8a9b-8a12ecd38d4f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-r"><pre><span></span><span class="w"> </span>
-</pre></div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="B.32)">B.32)<a class="anchor-link" href="#B.32)">¶</a></h3><p>è noto che il 5% dei semi di frumento di una determinata partita non germoglierà. I semi
+vengono venduti in confezioni da 200 semi, dei quali viene garantita la germinazione per almeno il
+90%. Utilizzando una opportuna approssimazione, si determini la probabilità che una confezione
+non sia conforme a tale garanzia.</p>
 </div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2b38a193-d777-4f82-b061-8e6f43e67be3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Calcoli:">Calcoli:<a class="anchor-link" href="#Calcoli:">¶</a></h4><p>$p=0.95$ <br/>
+$0.9 \cdot 200 = 180$ <br/></p>
+<p><strong>modello probabilistico:</strong> <br/>
+$X \sim Binomiale(n=200, p=0.95) \implies P(X&lt;180)$ <br/>
+$\mu = np = 200\cdot 0.95 = 190$ <br/>
+$\sigma ^ 2 = np(1-p)=200\cdot 0.95 \cdot 0.05 =9.5 \implies \sigma = \sqrt{9.5} \approx 3.08$ <br/></p>
+<p><strong>approssimazione normale:</strong> <br/>
+$X \approx N(190,9.5)$ <br/></p>
+<p><strong>Corelazione di continuità</strong> <br/>
+$P(X&lt;180)=P(X\leq 179) \implies P(X \leq 179) \approx P(X &lt; 179.5)$ <br/></p>
+<p><strong>standardizzazione:</strong> <br/>
+$Z=\frac{179.5-190}{3.08} \approx -3.41$</p>
+<p><strong>calcolo probabilità:</strong> <br/>
+$  P(Z&lt;-3.14) \approx 0.0003 \implies 0.03 \%$</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cc1e34f9-1c80-4536-a71f-a599cb018168">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="B.33)">B.33)<a class="anchor-link" href="#B.33)">¶</a></h3><p>Sia $\{X_n \}_n \leq 1$ una successione di variabili casuali con distribuzione di probabilità poisson di
+parametro nλ, con λ &gt; 0. Si studi la convergenza in probabilità della successione $\{Y_n \}_{n≥1}$, con
+$Y_n = X_n /n$. Avendo standardizzato opportunamente le variabili casuali della successione $\{Y_n\}_{n≥ 1}$,
+si studi la convergenza in distribuzione. Si calcoli in modo approssimato $P(X_n &gt; nλ)$, con n
+sufficientemente elevato.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cb9c7e52-6d89-42f6-92e8-9e8ae3e76072">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Calcoli:">Calcoli:<a class="anchor-link" href="#Calcoli:">¶</a></h4><p><strong>Definizione della sucessione:</strong> <br/>
+$Y_n=\frac{N_n}{n}$ <br/></p>
+<p><strong>media e varianza di $X_n$ e $Y_n$:</strong> <br/>
+$E[X_n]= n\lambda, Var(X_n)=n\lambda$ <br/>
+$E[Y_n] = \frac{1}{n}E[X_n]=\lambda$ <br/>
+$Var(Y_n)= \frac{1}{n^2}Var(X_n)=\frac{\lambda}{n}$ <br/></p>
+<p><strong>convergenza di probabilità in Y_n</strong> <br/></p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7dc7d271-a37f-401e-b164-78d192709919">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="C)-Inferenza-statistica">C) Inferenza statistica<a class="anchor-link" href="#C)-Inferenza-statistica">¶</a></h2>
 </div>
 </div>
 </div>
